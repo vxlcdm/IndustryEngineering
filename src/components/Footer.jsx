@@ -14,12 +14,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
  
 const solutions = [
-    { text: "Science and Engineering", path: "/science-engineering" },
-    { text: "Chemical Research", path: "/chemical-research" },
-    { text: "Power and Energy", path: "/power-energy" },
-    { text: "Mechanical Engineering", path: "/mechanical-engineering" },
-    { text: "Petroleum and Gas", path: "/petroleum-gas" },
-    { text: "Facture Process", path: "/facture-process" },
+    { text: "Science and Engineering", path: "/scienceengineering" },
+    { text: "Chemical Research", path: "/chemicalresearch" },
+    { text: "Power and Energy", path: "/powerenergy" },
+    { text: "Mechanical Engineering", path: "/mechanicalengineering" },
+    { text: "Petroleum and Gas", path: "/petroleumgas" },
+    { text: "Facture Process", path: "/factureprocess" },
 ];
 const newsData = [
     {

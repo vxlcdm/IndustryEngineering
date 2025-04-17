@@ -36,9 +36,22 @@ const Home =()=>{
     return(<>
     
     
-        
-        <WIG />
-        <WIG2 />
+        <Hover />
+        <Services />
+        <About />
+        <Proud />
+        <LNFAQ />
+        <Experts />
+        <Testimonial />
+        <Contact />
+        <Partner />
+
+
+
+
+
+        {/* <WIG />
+        <WIG2 /> */}
 
         {/* <Testimonial /> */}
     

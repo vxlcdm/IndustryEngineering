@@ -83,6 +83,8 @@ export default function About() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
+                    // border:"2px solid red",+
+                    
                 }}
             >
                 <Typography variant="h5" color="black" fontWeight="bold">

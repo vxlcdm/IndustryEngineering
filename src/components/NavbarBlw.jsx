@@ -5,6 +5,7 @@ import { Menu as MenuIcon } from '@mui/icons-material';
 import { useMediaQuery as UMQ} from "@mui/material";
 import { FaSearch } from "react-icons/fa";
 import { borderBottom, keyframes } from "@mui/system";
+import { Link } from "react-router-dom";
 
 
 
@@ -40,7 +41,7 @@ const navItems = [
             { label: "Power and Energy", to: "/solutions/powerenergy" },
             { label: "Mechanical Engineering", to: "/solutions/mechanicalengineering" },
             { label: "Petroleum and Gas", to: "/solutions/petroleumgas" },
-            { label: "Factory Process", to: "/solutions/factoryprocess" }
+            { label: "Facture Process", to: "/solutions/factoryprocess" }
         ]
     },
     {
@@ -258,9 +259,13 @@ const NavbarBlw =()=>{
 
     return(<>
         <AppBar disableGutters sx={{
-            position: "sticky",
+            // top:100,
+            position: 'unset', 
+            top: 95, zIndex: 10900,
+            // position: "fixed",
             bgcolor:"#062d4c",
             display: "flex",
+            width: "100%",
             justifyContent: "center",
             alignItems: "center",
             // border: "1px solid red",
@@ -316,10 +321,14 @@ const NavbarBlw =()=>{
                     <>
                         {navItems.map((item, i) => (
 
-                            <Box key={i} sx={{
+                            <Box key={i} 
+                            component={Link}
+                                to={item.to}
+                            sx={{
                                 color: "white",
                                 position: "relative",
                                 width: isMobile3 ? "100%" : "1.1",
+                                textDecoration:"none",
                                 px:{
                                     sm:2,
                                     md:2,
@@ -353,11 +362,13 @@ const NavbarBlw =()=>{
 
 
                                 {item.subLabels && (
-                                <Box 
+                                    <Box 
                                         className="submenu"
                                 sx={{
                                     // display: "flex",
                                     flexDirection: "column",
+                                    textDecoration: "none",
+
                                     bgcolor: "#062d4c",
                                     borderBottom: "5px solid #fbae19",
                                     display: "none",
@@ -377,10 +388,13 @@ const NavbarBlw =()=>{
                                 }}>
                                 {item.subLabels && item.subLabels.map((sub, index) => (
                                     <Box key={index} 
+                                        component={Link}
+                                        to={sub.to}
                                     sx={{
                                         // height: "25px",
                                         // width: "200px",
                                         bgcolor:"white",
+                                        textDecoration: "none",
                                         color:"black",
                                         zIndex: 9, cursor: "pointer",
                                         ":hover": {

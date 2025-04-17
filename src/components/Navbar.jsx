@@ -46,8 +46,14 @@ const Navbar=()=>{
 
     return(<>
     <AppBar sx={{
-        position:"sticky",
-        bgcolor:"#fff",
+        // position:"sticky",
+            // position: "fixed",
+            // position: 'fixed',
+            position: 'unset', 
+            top: 0,
+            zIndex: 1100, 
+            width: '100%' ,
+            bgcolor:"#fff",
             display: "flex",
             alignItems:"center",
             justifyContent: "center",
@@ -55,6 +61,8 @@ const Navbar=()=>{
             py:2,
             // gap: 1,
             // border: "1px solid blue",
+            // mb: 8,
+
     }}>
             <Toolbar sx={{ display: "flex", 
             

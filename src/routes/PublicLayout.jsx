@@ -4,6 +4,7 @@ import NavbarBlw from '../components/NavbarBlw'
 import Footer from '../components/Footer'
 import { Outlet, useLocation } from 'react-router-dom'
 import { Box } from '@mui/material'
+ 
 
 
  
@@ -19,8 +20,18 @@ const PublicLayout = () => {
   if (pathname.startsWith('/')) {
     navbarToRender = (
       <>
-        {/* <Navbar />
-        <NavbarBlw /> */}
+      <Box sx={{
+        // border:"10px solid red",
+        // display:"flex",
+          width: "100%",
+          zIndex:9999,
+
+        position:"fixed",
+      }}>
+
+          <Navbar />
+          <NavbarBlw />
+      </Box>
       </>
     );
   } else if (pathname.startsWith('/##')) {
@@ -43,7 +54,8 @@ const PublicLayout = () => {
 
   return (
     <>
-    
+      {/* {navbarToRender} */}
+
       <Box
         sx={{
           display: 'flex',
@@ -56,16 +68,18 @@ const PublicLayout = () => {
      
     {/* <Navbar/>
         <NavbarBlw/> */}
-
         {navbarToRender}
 
-      <Box component="main" sx={{ flex: 1 }}>
+
+      <Box component="main" sx={{ flex: 1,
+          pt: { xs:"305px",sm: "250px", md: '160px',lg:'160px' }
+       }}>
         <Outlet />
       </Box>
      
 
 
-    {/* <Footer /> */}
+    <Footer />
     
       </Box>
     </>
