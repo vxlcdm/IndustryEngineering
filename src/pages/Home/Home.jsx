@@ -19,6 +19,8 @@ import Testimonial3 from "./Testimonial3";
 import Testimonial4 from "./Testimonial4";
 import WWD from "./WWD";
 import Hover3 from "./Hover3";
+import WIG from "./WIG";
+import WIG2 from "./WIG2";
 
 
 
@@ -35,7 +37,9 @@ const Home =()=>{
     
     
         
-        <Hover3 />
+        <WIG />
+        <WIG2 />
+
         {/* <Testimonial /> */}
     
     

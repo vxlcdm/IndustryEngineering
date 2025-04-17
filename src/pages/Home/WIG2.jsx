@@ -41,7 +41,7 @@ import RecyclingIcon from '@mui/icons-material/Autorenew';
 
 
 
-export default function WIG() {
+export default function WIG2() {
 
 
 
@@ -153,13 +153,13 @@ export default function WIG() {
                 >
                     <Box
                         component="img"
-                        src="https://lazeapostolski.com/industrial2/img/worker.png"
+                        src="https://lazeapostolski.com/industrial2/img/worker-man.png"
                         alt="Company Overview"
                         sx={{
                             width: { xs: "100%", sm: "70%", md: "90%", lg: "60%" },
                             height: "auto",
                             // height: "100%",
-                            px:{xs:0, sm:5},
+                            px: { xs: 0, sm: 5 },
                             // border: "1px solid red",
                         }}
                     />
@@ -217,14 +217,13 @@ export default function WIG() {
                         pr: { xs: 0, md: 3, lg: 3 },
                         pt: 3,
                         mt: { xs: 4, md: 0 },
-                        // px: { xs: 0, sm: 5 },
                     }}
                 >
                     <Box sx={{
-                         position: "relative", 
-                    display: "inline-block", 
+                        position: "relative",
+                        display: "inline-block",
                         // mb: 4
-                         }}>
+                    }}>
                         <Typography variant="h4" fontWeight="bold" >
                             <Typography variant="h4" fontWeight="bold" sx={{
                                 // m: "0 !important",
@@ -233,7 +232,7 @@ export default function WIG() {
                                 We are Industrial Group
                             </Typography>
                             <Box component="span" sx={{ position: "relative", pr: 0.5 }}>
-                               
+
                                 <Box
                                     component="span"
                                     sx={{
@@ -247,7 +246,7 @@ export default function WIG() {
                                 >
 
                                 </Box>
-                             
+
                             </Box>
                         </Typography>
                     </Box>
