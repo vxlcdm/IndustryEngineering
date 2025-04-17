@@ -14,6 +14,13 @@ import Hover2 from "./Hover2";
 import Services2 from "./Services2";
 import AUFAQ from "./AUFAQ";
 import LN from './LN';
+import Testimonial2 from "./Testimonial2";
+import Testimonial3 from "./Testimonial3";
+import Testimonial4 from "./Testimonial4";
+import WWD from "./WWD";
+import Hover3 from "./Hover3";
+
+
 
 const Home =()=>{
 
@@ -28,7 +35,8 @@ const Home =()=>{
     
     
         
-        <LN  />
+        <Hover3 />
+        {/* <Testimonial /> */}
     
     
 

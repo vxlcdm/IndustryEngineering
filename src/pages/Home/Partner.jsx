@@ -20,7 +20,7 @@ const Partner = () => {
   const isXs = useMediaQuery(theme.breakpoints.down("sm"));
   const isSm = useMediaQuery(theme.breakpoints.between("sm", "md"));
   const isMd = useMediaQuery(theme.breakpoints.between("md", "lg"));
-  const isLg = useMediaQuery(theme.breakpoints.up("lg"));
+//   const isLg = useMediaQuery(theme.breakpoints.up("lg"));
 
   const getVisibleCount = () => {
     if (isXs) return 1;

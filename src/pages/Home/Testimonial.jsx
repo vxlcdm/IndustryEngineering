@@ -218,7 +218,7 @@ export default function Testimonial(){
 
                                     }}
                                 >
-                                    {/* Testimonial Box */}
+                                    
                                     <Paper
                                         elevation={3}
                                         sx={{
@@ -250,7 +250,7 @@ export default function Testimonial(){
                                         </Typography>
                                     </Paper>
 
-                                    {/* Avatar, Name, Role & Rating */}
+                                    
                                     <Box sx={{ display: "flex", alignItems: "center", mt: 4, ml: 2 }}>
                                         <Avatar
                                             src="https://lazeapostolski.com/industrial2/img/author.jpg"

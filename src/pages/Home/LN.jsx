@@ -192,7 +192,7 @@ const LN = () => {
                             {cardData.map((card, index) => (
                                 <Grid item xs={12} md={6} key={index} sx={{
                                     width: { xs: "100%", sm: "80%", md: "275px", lg: "365px" },
-                                    transition:"all ease 0.3s",
+                                    transition:"hover ease 0.3s",
                                     "&:hover":{
                                         // boxShadow: 6,    
                                         // boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.2)',
