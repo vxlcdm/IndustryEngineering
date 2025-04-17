@@ -5,23 +5,23 @@ import SecurityIcon from '@mui/icons-material/Security';
 import GroupsIcon from '@mui/icons-material/Groups';
 
 
-const services = [
-    {
-        title: 'Material Science and Engineering',
-        description: 'Morbi tincidunt iaculis ipsum eget laoreet. Cras at finibus ante, posuere ornare ex. Mauris sollicitudin ornare ullamcorper. Donec in arcu purus.',
-        image: 'https://lazeapostolski.com/industrial2/img/proj1.jpg',
-    },
-    {
-        title: 'Chemical Research',
-        description: 'Morbi tincidunt iaculis ipsum eget laoreet. Cras at finibus ante, posuere ornare ex. Mauris sollicitudin ornare ullamcorper. Donec in arcu purus.',
-        image: 'https://lazeapostolski.com/industrial2/img/proj2.jpg',
-    },
-    {
-        title: 'Power and Energy',
-        description: 'Morbi tincidunt iaculis ipsum eget laoreet. Cras at finibus ante, posuere ornare ex. Mauris sollicitudin ornare ullamcorper. Donec in arcu purus.',
-        image: 'https://lazeapostolski.com/industrial2/img/proj3.jpg',
-    },
-];
+// const services = [
+//     {
+//         title: 'Material Science and Engineering',
+//         description: 'Morbi tincidunt iaculis ipsum eget laoreet. Cras at finibus ante, posuere ornare ex. Mauris sollicitudin ornare ullamcorper. Donec in arcu purus.',
+//         image: 'https://lazeapostolski.com/industrial2/img/proj1.jpg',
+//     },
+//     {
+//         title: 'Chemical Research',
+//         description: 'Morbi tincidunt iaculis ipsum eget laoreet. Cras at finibus ante, posuere ornare ex. Mauris sollicitudin ornare ullamcorper. Donec in arcu purus.',
+//         image: 'https://lazeapostolski.com/industrial2/img/proj2.jpg',
+//     },
+//     {
+//         title: 'Power and Energy',
+//         description: 'Morbi tincidunt iaculis ipsum eget laoreet. Cras at finibus ante, posuere ornare ex. Mauris sollicitudin ornare ullamcorper. Donec in arcu purus.',
+//         image: 'https://lazeapostolski.com/industrial2/img/proj3.jpg',
+//     },
+// ];
 
 
 const features = [
@@ -59,7 +59,7 @@ Morbi tincidunt iaculis ipsum eget laoreet. Cras at finibus ante, posuere ornare
 
 
 const Hover2 = () => {
-    const duplicated = [...services, ]; 
+    // const duplicated = [...services, ]; 
 
 
 

@@ -47,7 +47,7 @@ const Services2 = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const visibleCount = isSmDown ? 1 : isMdDown ? 2 : 3;
+    const visibleCount = isSmDown ? 1 : isMdDown ? 3 : 4;
 
     const prevSlide = () => {
         setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
@@ -72,17 +72,152 @@ const Services2 = () => {
         <>
 
             <Box sx={{
+                py:10,
                 backgroundImage: 'url(https://lazeapostolski.com/industrial2/img/bg.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                overflow:"hidden",
+                
             }}>
                 <Box sx={{
+
                     width: {
                         xs: '95%',
                         sm: '600px',
                         md: '900px',
                         lg: '1200px',
                     },
+                    // width:"100%",
+                    justifySelf:"center",
+                    // border:"1px solid red",
+                    // border: "1px solid red",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    // width: "15%",
+
+                }}>
+                    <Typography
+                        variant="h4"
+                        fontWeight="bold"
+                        gutterBottom
+                        sx={{
+                            mb: 4,
+                            color: "white",
+                            display: "inline-block",
+
+                            position: "relative",
+                            textAlign: "start",
+                            "&::after": {
+                                content: '""',
+                                position: "absolute",
+                                left: 0,
+                                bottom: -8,
+
+                                height: "3.5px",
+                                width: "40px",
+                                backgroundColor: "#fbae19",
+                            },
+                        }}
+                    >
+                        Our Services
+                    </Typography>
+
+
+                    <Stack direction="row" justifyContent="center" spacing={2}
+                        sx={{
+                            // position: "absolute",
+                            // top:45,
+                            // right:250,
+                            // border: "1px solid red",
+                            display:"flex",
+                            justifyContent:"end",
+                            alignItems:"center",
+                            // width:"15%",
+
+
+                        }}>
+                        <Button
+
+                            onClick={prevSlide}
+                            variant="contained"
+                            sx={{
+                                bgcolor: '#fbae19',
+                                width: {
+                                    //   xs: 50,
+                                    //   sm: 60,
+                                    //   md: 80,
+                                    //   lg: 100,
+                                },
+                                minWidth: 0,
+                                p: {
+                                    xs: 0.5,
+                                    //   sm: 1,
+
+                                },
+                                '&:hover': {
+                                    bgcolor: '#062d4c',
+                                },
+                            }}
+                        >
+                            <KeyboardArrowLeftIcon
+                                sx={{
+                                    fontSize: {
+                                        xs: 20,
+                                        sm: 24,
+                                        md: 28,
+                                        lg: 30,
+                                    },
+                                }}
+                            />
+                        </Button>
+
+                        <Button
+                            onClick={nextSlide}
+                            variant="contained"
+                            sx={{
+                                bgcolor: '#fbae19',
+                                width: {
+                                    //   xs: 50,
+                                    //   sm: 60,
+                                    //   md: 80,
+                                    //   lg: 100,
+                                },
+                                minWidth: 0,
+                                p: {
+                                    xs: 0.5,
+                                    //   sm: 1,
+
+                                },
+                                '&:hover': {
+                                    bgcolor: '#062d4c',
+                                },
+                            }}
+                        >
+                            <KeyboardArrowRightIcon
+                                sx={{
+                                    fontSize: {
+                                        xs: 20,
+                                        sm: 24,
+                                        md: 28,
+                                        lg: 30,
+                                    },
+                                }}
+                            />
+                        </Button>
+                    </Stack>
+
+
+                </Box>
+                <Box sx={{
+                    // width: {
+                    //     xs: '95%',
+                    //     sm: '600px',
+                    //     md: '900px',
+                    //     lg: '1200px',
+                    // },
+                    // width:"100%",
+                    // border:"1px solid red",
                     display: 'flex',
                     //   bgcolor: '#eee',
                     justifySelf: 'center',
@@ -93,34 +228,19 @@ const Services2 = () => {
                 }}>
 
 
-                    <Box sx={{ textAlign: 'start', py: 5, }}>
-                        <Typography
-                            variant="h4"
-                            fontWeight="bold"
-                            gutterBottom
-                            sx={{
-                                mb: 4,
-                                color: "white",
-                                display: "inline-block",
+                    <Box sx={{ textAlign: 'start', py: 5,
+                        // border: "1px solid red",
+                        width: "100%",
 
-                                position: "relative",
-                                textAlign: "start",
-                                "&::after": {
-                                    content: '""',
-                                    position: "absolute",
-                                    left: 0,
-                                    bottom: -8,
+                     }} >
+                        
 
-                                    height: "3.5px",
-                                    width: "40px",
-                                    backgroundColor: "#fbae19",
-                                },
-                            }}
-                        >
-                            Our Services
-                        </Typography>
-
-                        <Stack direction="row" spacing={2} justifyContent="center" mb={3}>
+                        <Stack direction="row" spacing={0} justifyContent="center" mb={3}
+                        sx={{
+                            border: "1px solid red",
+                            width: "100%",
+                            // border:"3px solid red"
+                        }}>
                             {getVisibleImages().map((src, i) => (
                                 <Box
                                     key={i}
@@ -167,75 +287,12 @@ const Services2 = () => {
                             ))}
                         </Stack>
 
-                        <Stack direction="row" justifyContent="center" spacing={2}>
-                            <Button
-                                onClick={prevSlide}
-                                variant="contained"
-                                sx={{
-                                    bgcolor: '#fbae19',
-                                    width: {
-                                        //   xs: 50,
-                                        //   sm: 60,
-                                        //   md: 80,
-                                        //   lg: 100,
-                                    },
-                                    minWidth: 0,
-                                    p: {
-                                        xs: 0.5,
-                                        //   sm: 1,
+                       
 
-                                    },
-                                    '&:hover': {
-                                        bgcolor: '#062d4c',
-                                    },
-                                }}
-                            >
-                                <KeyboardArrowLeftIcon
-                                    sx={{
-                                        fontSize: {
-                                            xs: 20,
-                                            sm: 24,
-                                            md: 28,
-                                            lg: 30,
-                                        },
-                                    }}
-                                />
-                            </Button>
 
-                            <Button
-                                onClick={nextSlide}
-                                variant="contained"
-                                sx={{
-                                    bgcolor: '#fbae19',
-                                    width: {
-                                        //   xs: 50,
-                                        //   sm: 60,
-                                        //   md: 80,
-                                        //   lg: 100,
-                                    },
-                                    minWidth: 0,
-                                    p: {
-                                        xs: 0.5,
-                                        //   sm: 1,
 
-                                    },
-                                    '&:hover': {
-                                        bgcolor: '#062d4c',
-                                    },
-                                }}
-                            >
-                                <KeyboardArrowRightIcon
-                                    sx={{
-                                        fontSize: {
-                                            xs: 20,
-                                            sm: 24,
-                                            md: 28,
-                                            lg: 30,
-                                        },
-                                    }}
-                                />
-                            </Button>
-                        </Stack>
+
+
                     </Box>
 
 
@@ -252,7 +309,7 @@ const Services2 = () => {
 
 
                 </Box></Box>
-            <Box sx={{
+            {/* <Box sx={{
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -288,7 +345,7 @@ const Services2 = () => {
                     </Typography>
 
 
-                </Box></Box>
+                </Box></Box> */}
 
 
 
