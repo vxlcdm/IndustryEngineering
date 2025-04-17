@@ -10,6 +10,7 @@ import LNFAQ from "./LNFAQ";
 // import Partner from "./Partner";
 import Services from "./Services";
 import Testimonial from "./Testimonial";
+import Partner from "./Partner";
 
 
 
@@ -26,7 +27,7 @@ const Home =()=>{
     
     
         
-        <LNFAQ  />
+        <Partner  />
     
     
 
