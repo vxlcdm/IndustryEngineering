@@ -76,9 +76,11 @@ const Partner = () => {
 
 <>
 <Box   sx={{
+              bgcolor:"#F5F5F5",
                 // border:"1px solid red",
 
               my: 5,
+              py:5,
 
 }}>
 
@@ -89,7 +91,7 @@ const Partner = () => {
                 md: '900px',
                 lg: '1200px',
             },
-                  my: 0,
+                  pt: 5,
 
             justifySelf: "center",
             display: "flex",
@@ -164,6 +166,7 @@ const Partner = () => {
                     msOverflowStyle: "none",
                     scrollbarWidth: "none",
                     cursor: isDragging.current ? "grabbing" : "grab",
+                    userSelect: "none"
                 }}
             >
                 {totalImages.map((img, i) => (
@@ -187,9 +190,10 @@ const Partner = () => {
 
                         }}
                     >
-                        <img src={img} alt={`slide-${i}`} style={{
+                        <img src={img} alt={`slide-${i}`} draggable={false}   style={{
                             width: "100%", height: "auto",
                             position:"relative",
+                            draggable: false,
                             // top:0,
                             zIndex:-2,
 

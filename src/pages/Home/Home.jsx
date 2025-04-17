@@ -11,7 +11,7 @@ import LNFAQ from "./LNFAQ";
 import Services from "./Services";
 import Testimonial from "./Testimonial";
 import Partner from "./Partner";
-
+import Hover2 from "./Hover2";
 
 
 const Home =()=>{
@@ -27,7 +27,7 @@ const Home =()=>{
     
     
         
-        <Partner  />
+        <Hover2  />
     
     
 

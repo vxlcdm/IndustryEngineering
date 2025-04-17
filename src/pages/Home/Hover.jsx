@@ -20,7 +20,7 @@ const services = [
 ];
 
 const Hover = () => {
-    const duplicated = [...services, ...services]; // Two rows (6 total)
+    const duplicated = [...services, ...services];  
 
 
 
