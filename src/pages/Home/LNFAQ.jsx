@@ -181,7 +181,7 @@ export default function LNFAQ() {
                                         },
                                     }}
                                 >
-                                    Frequently Ask questions
+                                    Frequently Ask Questions
                                 </Typography>
                             </Box>
                         

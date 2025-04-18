@@ -48,7 +48,10 @@ const WWD = () => {
                 // border: "1px solid red",
                 // display: "flex",
                 // justifyContent: { xs: "center", md: "flex-start" },
-                justifySelf: "center",
+                       justifySelf: "center",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
                 // alignSelf: "center",
                 // border: "1px solid red",
                 // maxWidth: '1200px',
@@ -64,6 +67,7 @@ const WWD = () => {
                 
                                 },
                                 display: "flex",
+                                
                                 justifySelf: "center",
                                 alignSelf: "center",
                 

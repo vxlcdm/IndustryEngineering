@@ -62,6 +62,9 @@ const Hover3 = () => {
 
 <Box sx={{
     py:10,
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
 }}>
 
                 <Box
@@ -69,6 +72,12 @@ const Hover3 = () => {
                         // border: "1px solid red",
                         display: 'flex',
                         justifySelf:"center",
+
+                          
+                           
+
+
+                        
                         alignSelf:"center",
                         alignItems:"center",
                         // flexWrap: 'wrap',

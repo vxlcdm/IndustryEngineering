@@ -74,12 +74,16 @@ const LN = () => {
 
 
          <Box  sx={{
-                // border: "1px solid red",
+                    // border: "1px solid red",display: "flex",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
                 my:10
          }}>
                 <Box sx={{
                     position: "relative", display: "flex",
                     // border: "1px solid red",
+
 
                     // mb: 4,
                     mb: "0  !important",
