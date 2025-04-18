@@ -37,9 +37,9 @@ const Home =()=>{
     return(<>
     
 
-    <WWD></WWD>
+    {/* <WWD></WWD> */}
     
-         {/* <Hero/>
+         <Hero/>
         <Hover />
         <Services />
         <About />
@@ -48,7 +48,7 @@ const Home =()=>{
         <Experts />
         <Testimonial />
         <Contact />
-        <Partner /> */}
+        <Partner />
 
 
 
