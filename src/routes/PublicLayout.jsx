@@ -6,22 +6,22 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { Box } from '@mui/material'
 import NavbarBlw2 from '../components/NavbarBlw2'
 import Navbar2 from '../components/Navbar2'
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+// import useMediaQuery from '@mui/material/useMediaQuery';
+// import { useTheme } from '@mui/material/styles';
 
 
  
 
 
 const PublicLayout = () => {
-  const theme = useTheme();
-  const isLg = useMediaQuery(theme.breakpoints.down('lg'));
-  const isMd = useMediaQuery(theme.breakpoints.down('md'));
-  const isSm = useMediaQuery(theme.breakpoints.down('sm'));
-  const isXs = useMediaQuery(theme.breakpoints.down('xs'));
+  // const theme = useTheme();
+  // const isLg = useMediaQuery(theme.breakpoints.down('lg'));
+  // const isMd = useMediaQuery(theme.breakpoints.down('md'));
+  // const isSm = useMediaQuery(theme.breakpoints.down('sm'));
+  // const isXs = useMediaQuery(theme.breakpoints.down('xs'));
 
-  const is675 = useMediaQuery('(min-width:675px)');
-  const is355 = useMediaQuery('(min-width:355px)');
+  // const is675 = useMediaQuery('(min-width:675px)');
+  // const is355 = useMediaQuery('(min-width:355px)');
 
   const location = useLocation();
   // maxHeight:"100%",
@@ -115,7 +115,7 @@ const PublicLayout = () => {
      
 
 
-    {/* <Footer /> */}
+    <Footer />
     
       </Box>
     </>

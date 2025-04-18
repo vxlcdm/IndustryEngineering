@@ -72,6 +72,18 @@ export default function ProjectsSP() {
                 />
             </Box>
 
+
+
+
+
+            <Box sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+            }}>
+
+
             <Box
                 sx={{
                     display: "flex",
@@ -194,7 +206,7 @@ export default function ProjectsSP() {
 
 
                 </Box>
-            </Box>
+                </Box></Box>
 
 
 

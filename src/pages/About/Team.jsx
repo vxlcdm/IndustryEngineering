@@ -96,6 +96,22 @@ export default function Team(){
 
 
     return(<>
+
+
+
+
+
+
+     <Box sx={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}>
+
+
+
+                    
     <Box sx={{
         width:"100%",
            
@@ -306,7 +322,7 @@ export default function Team(){
 
 
 
-
+            </Box>
 
 
 
