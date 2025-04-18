@@ -75,6 +75,7 @@ const Services = () => {
     width:"100%",
     display:"flex",
     justifyContent:"center",
+    flexDirection:"column",
     alignItems:"center",
 }}>
 

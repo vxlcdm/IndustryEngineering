@@ -102,18 +102,14 @@ export default function Team(){
 
 
 
-     <Box sx={{
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}>
+ 
 
 
 
-                    
+
     <Box sx={{
         width:"100%",
+            
            
 
     }}>
@@ -165,7 +161,12 @@ export default function Team(){
 
 
 
-
+            <Box sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+            }}>
             <Grid container spacing={4} sx={{
                 // border:"2px solid red",
                 width: "1170px",
