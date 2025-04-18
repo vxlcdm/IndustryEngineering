@@ -52,7 +52,7 @@ const Navbar=()=>{
             position: 'unset', 
             top: 0,
             zIndex: 1100, 
-            width: '100%' ,
+            // width: '100%' ,
             bgcolor:"#fff",
             display: "flex",
             alignItems:"center",

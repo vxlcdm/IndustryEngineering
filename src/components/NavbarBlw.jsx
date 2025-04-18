@@ -265,7 +265,7 @@ const NavbarBlw =()=>{
             // position: "fixed",
             bgcolor:"#062d4c",
             display: "flex",
-            width: "100%",
+            // width: "100%",
             justifyContent: "center",
             alignItems: "center",
             // border: "1px solid red",

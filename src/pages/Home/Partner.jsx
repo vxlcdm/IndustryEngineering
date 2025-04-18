@@ -162,7 +162,8 @@ const Partner = () => {
                 sx={{
                     //   border: "1px solid red",
 
-                    width: "1170px",
+                    // width: "1170px",
+                    width:"100%",
                     //   justifyContent: "center",
 
                     display: "flex",
@@ -183,12 +184,18 @@ const Partner = () => {
                     <Box
                         key={i}
                         sx={{
-                            flex: {
-                                xs: `0 0 calc(102% / ${visibleCount})`,
-                                sm: `0 0 calc(101% / ${visibleCount})`,
-                                md: `0 0 calc(98.9% / ${visibleCount})`,
-                                lg: `0 0 calc(97.4% / ${visibleCount})`
+                            flex: 
+                             {
+                              xs: `0 0 calc(102% / ${visibleCount})`,
+                              sm: `0 0 calc(101% / ${visibleCount})`,
+                              md: `0 0 calc(98.9% / ${visibleCount})`,
+                              lg: `0 0 calc(97.4% / ${visibleCount})`
                             },
+                              
+                            // },
+                            // maxWidth:{
+                            //  xs:"100%"
+                            // },
                             scrollSnapAlign: "start",
                             borderRadius: 0,
                             boxShadow: 3,
