@@ -4,7 +4,7 @@ import About from "./About";
 import Hover2 from "./Hover2";
 import Contact from "./Contact";
 import Experts from "./Experts";
-// import Hero from "./Hero";
+import Hero from "./Hero";
 import Hover from "./Hover";
 import Proud from "./Proud";
 import LNFAQ from "./LNFAQ";
@@ -31,6 +31,7 @@ const Home = () => {
 
 
 
+<Hero></Hero>
         <Hover2 />
         <Services2 />
         <AUFAQ />

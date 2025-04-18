@@ -35,7 +35,8 @@ const Home4 =()=>{
 
     return(<>
     
-    
+        <Hero></Hero>
+
         <Hover3 />
         <WWD></WWD>
         <Services2 />

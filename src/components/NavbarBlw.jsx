@@ -276,6 +276,7 @@ const NavbarBlw =()=>{
                 m:0,
                 justifyContent: "center",
                 alignItems: "center",
+
                 // border: "1px solid blue",
                 width:"100%",
                 maxWidth:"1170px",
@@ -289,6 +290,7 @@ const NavbarBlw =()=>{
                     display: "flex",
                     width: "100%",
                     justifyContent: "space-between",
+
                     // position: "relative",
                     alignItems:isMobile3?'end':"none",
                     // justifyContent: "center",
@@ -304,6 +306,7 @@ const NavbarBlw =()=>{
 
             }}>
                 <Box sx={{
+                                // overflowY: isSm ? "scroll" : "unset",
                         display:"flex",
                         // position: "relative",
                         flexDirection: {
@@ -314,6 +317,7 @@ const NavbarBlw =()=>{
                             xs:"#fbae19",
                             sm:"#062d4c"
                         },
+
                         // border:"1px solid white",
                         width:isMobile3?"100%":"",
                         // alignItems:"flex-start"
@@ -327,6 +331,7 @@ const NavbarBlw =()=>{
                             sx={{
                                 color: "white",
                                 position: "relative",
+
                                 width: isMobile3 ? "100%" : "1.1",
                                 textDecoration:"none",
                                 px:{
@@ -434,12 +439,13 @@ const NavbarBlw =()=>{
 
 
                         <Box sx={{
+
                             // border:"1px solid black",
                             width:"100%",
                             bgcolor:"fbae19",
                             color:"black",
                             // overflow: "hidden",
-                            overflow: "hidden",
+                            // overflow: "hidden",
                             maxHeight: openFlag ? `${contentHeight}px+${contentHeight2}px` : "55px",
                             transition: "max-height 0.5s ease-in-out",
                             // maxHeight: openFlag2 ? `` : "462.88px",
@@ -501,12 +507,14 @@ const NavbarBlw =()=>{
                                 {navItems.map((value, anoIndex) => (
                                     
                                     
-                                    <Box key={anoIndex} 
+                                    <Box
+                                      
+                                     key={anoIndex} 
                                     sx={{
                                         borderBottom: "dotted 2px #ddd",
 
                                         
-                                        
+                                        textDecoration:"none",
                                         display: "flex",
                                         position:"relative",
                                         // p:0.5,
@@ -532,9 +540,13 @@ const NavbarBlw =()=>{
 
 
                                         <Box 
+                                            onClick={() => handleDrawerOpen()}
+                                            component={Link}
+                                            to={value.to}
                                         sx={{
                                             // borderBottom: "dotted 2px #ddd",
                                             display: "flex",
+                                            textDecoration: "none",
                                             flexDirection:"column",
                                             position: "relative",
                                             // borderTop: anoIndex === openKar ? "solid 3px #fbae19" : "",
@@ -594,9 +606,13 @@ const NavbarBlw =()=>{
                                                     {openStates[anoIndex]  &&  (value.subLabels.map((valu, inde) => (
 
                                                        
-                                                        <Box key={inde} 
+                                                        <Box 
+                                                            onClick={() => handleDrawerOpen()}
+                                                            component={Link}
+                                                            to={valu.to} key={inde} 
                                                         sx={{
                                                             // display:"none",
+                                                            textDecoration: "none",
                                                             display:"flex",
                                                             // border:"1px solid red",
                                                             overflow:"hidden",

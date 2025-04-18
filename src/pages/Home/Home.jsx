@@ -3,7 +3,7 @@ import About from "./About";
 // import Ach from "./Ach";
 import Contact from "./Contact";
 import Experts from "./Experts";
-import Hero from "./Hero";
+// import Hero from "./Hero";
 import Hover from "./Hover";
 import Proud from "./Proud";
 import LNFAQ from "./LNFAQ";
@@ -21,7 +21,8 @@ import WWD from "./WWD";
 import Hover3 from "./Hover3";
 import WIG from "./WIG";
 import WIG2 from "./WIG2";
-
+// import Hero from "./Hero";
+import Hero from './Hero';
 
 
 const Home =()=>{
@@ -36,6 +37,7 @@ const Home =()=>{
     return(<>
     
     
+         <Hero/>
         <Hover />
         <Services />
         <About />
@@ -45,7 +47,6 @@ const Home =()=>{
         <Testimonial />
         <Contact />
         <Partner />
-
 
 
 

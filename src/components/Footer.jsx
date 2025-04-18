@@ -71,7 +71,7 @@ const Footer =()=>{
                         },
                     }}
                 >
-                    <Typography variant="h6" sx={{
+                    <Typography variant="body1" sx={{
                         color: '#fff', fontWeight: 600,
                         textAlign: { xs: 'center', md: "start" },
 
@@ -83,6 +83,7 @@ const Footer =()=>{
                         variant="outlined"
                         sx={{
                             color: '#fff',
+                            fontSize:"0.8rem",
                             borderColor: '#fff',
                             // px: 3,
                             py: 1,
