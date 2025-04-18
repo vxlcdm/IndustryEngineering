@@ -266,6 +266,7 @@ const Services = () => {
                           display: 'flex',
                           justifyContent: 'center',
                           alignItems: 'center',
+                          width:"100%",
                         //   backgroundColor: '#e5e5e5 ',
               backgroundColor: '#fbae19 ',
 
