@@ -11,14 +11,16 @@ import Navbar2 from '../components/Navbar2'
 // import { useTheme } from '@mui/material/styles';
 import { NavContext } from '../context/NavContext';
 // import { NavProvider } from '../context/NavContext';
- 
+ import {useMediaQuery as UMQ }from '@mui/material';
 
 const PublicLayout = () => {
+
   // const theme = useTheme();
   // const isLg = useMediaQuery(theme.breakpoints.down('lg'));
   // const isMd = useMediaQuery(theme.breakpoints.down('md'));
   // const isSm = useMediaQuery(theme.breakpoints.down('sm'));
   // const isXs = useMediaQuery(theme.breakpoints.down('xs'));
+  const isDev=UMQ("(max-width:522.5px)");
  
   const { openFlag, setOpenFlag } = useContext(NavContext);
 
@@ -60,11 +62,12 @@ const PublicLayout = () => {
         // maxHeight: 'max-content',
         // maxHeight:"100%",
         // height:"20%",
-        height:openFlag?"100%":"0%",
+        height:openFlag?"100%":0,
           // maxHeight: '700px',
           overflowY: openFlag ? "auto" : "unset",
+          // overflowX:"hidden",
           // overflowY: "auto",
-          top:openFlag?"0":0,
+          top:openFlag?0:0,
 
 
 
@@ -90,7 +93,7 @@ const PublicLayout = () => {
          <Box sx={{
           //  border:"10px solid red",
            // display:"flex",
-           width: "100%",
+          //  width: "100%",
            zIndex: 9999,
 
           //  position: "fixed",
@@ -131,7 +134,7 @@ const PublicLayout = () => {
 
 
       <Box component="main" sx={{ flex: 1,
-          pt: { xs:"305px",sm: "250px", md: '160px',lg:'160px' },
+          pt: isDev ? { xs: "300px", sm: "235px", md: '150px', lg: '150px' } : { xs:"285px",sm: "235px", md: '150px',lg:'150px' },
           // border:"3px solid green",
        }}>
         <Outlet />
@@ -139,7 +142,7 @@ const PublicLayout = () => {
      
 
 
-    {/* <Footer /> */}
+    <Footer />
     
       </Box>
     </>

@@ -278,10 +278,10 @@ const NavbarBlw =()=>{
             // position: openFlag ? "absolute" : "unset",
             position: openFlag ? "unset" : "absolute",
             width: "100%",
-
+            // left:0,
             // top: 200,
             // top: isDevE ?190 : { xs: 200, sm: 150, md:97 },
-            top: isDevE ? { xs: 200, sm: 150, md: 97 } : { xs: 183, sm: 149, md: 97 },
+            top: isDevE ? { xs: 199, sm: 150, md: 97 } : { xs: 182, sm: 148, md: 96 },
 
              zIndex: 10900,
             bgcolor:"#062d4c",
