@@ -75,6 +75,16 @@ const Partner = () => {
 
 
 <>
+
+
+
+      <Box sx={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}>
+
 <Box   sx={{
               bgcolor:"#F5F5F5",
                 // border:"1px solid red",
@@ -204,7 +214,7 @@ const Partner = () => {
 
 
         </Box>
-</Box>
+        </Box></Box>
 </>
 
 

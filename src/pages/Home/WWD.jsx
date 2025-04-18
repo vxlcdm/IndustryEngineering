@@ -30,6 +30,19 @@ const WWD = () => {
 
 
 <>     
+
+ <Box sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+            }}>
+
+
+
+
+
+
         <Box sx={{
             my:10,
                 // border: "1px solid red",
@@ -227,7 +240,7 @@ const WWD = () => {
                 </Box>
 
 
-        </Box>
+                </Box>   </Box>
 
 
  </>

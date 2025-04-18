@@ -71,6 +71,12 @@ export default function AUFAQ() {
         }}>
 
 
+<Box sx={{
+    width:"100%",
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+}}>
             <Box sx={{ position: "relative", display: "flex", 
 
             // mb: 4,
@@ -127,7 +133,7 @@ export default function AUFAQ() {
                     
                 </Typography>
             </Box>
-
+            </Box>
 
 
 

@@ -70,6 +70,12 @@ const Hover2 = () => {
 
 
 
+<Box sx={{
+    width:"100%",
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+}}>
 
 <Box sx={{
             my:5,
@@ -394,7 +400,7 @@ const Hover2 = () => {
 </Box>
 
 
-
+        </Box>
 
 
     );

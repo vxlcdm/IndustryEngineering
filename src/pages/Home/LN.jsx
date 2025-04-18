@@ -64,6 +64,14 @@ const LN = () => {
 
 <>  
 
+            <Box sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+            }}>
+
+
 
          <Box  sx={{
                 // border: "1px solid red",
@@ -256,7 +264,7 @@ const LN = () => {
                 </Box>
 
 
-         </Box>
+                </Box></Box>
 
 
 

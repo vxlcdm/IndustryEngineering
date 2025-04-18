@@ -46,6 +46,20 @@ const Hover3 = () => {
 
 <>
 
+
+
+
+
+ <Box sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+            }}>
+
+
+
+
 <Box sx={{
     py:10,
 }}>
@@ -142,7 +156,7 @@ const Hover3 = () => {
                 </Box>
 
 </Box>
-
+            </Box>
 
 </>
 

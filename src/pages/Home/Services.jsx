@@ -70,6 +70,16 @@ const Services = () => {
   return (
       <>
 
+
+<Box sx={{
+    width:"100%",
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+}}>
+
+
+
 <Box sx={{
           backgroundImage: 'url(https://lazeapostolski.com/industrial2/img/bg.jpg)',
           backgroundSize: 'cover',
@@ -290,7 +300,7 @@ const Services = () => {
                           </Box></Box>
 
 
-
+          </Box>
 </>
   );
 };

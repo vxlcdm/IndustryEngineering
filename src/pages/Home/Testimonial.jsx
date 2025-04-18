@@ -74,6 +74,12 @@ export default function Testimonial(){
 
 
 
+<Box sx={{
+    width:"100%",
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+}}>
 
 
 <Box sx={{
@@ -120,7 +126,8 @@ export default function Testimonial(){
                 >
                     Testimonials
                 </Typography>
-</Box>
+                </Box>
+            </Box>
 
 
 

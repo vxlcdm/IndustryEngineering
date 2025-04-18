@@ -71,6 +71,9 @@ const Services2 = () => {
     return (
         <>
 
+
+
+
             <Box sx={{
                 py:10,
                 backgroundImage: 'url(https://lazeapostolski.com/industrial2/img/bg.jpg)',
@@ -79,6 +82,17 @@ const Services2 = () => {
                 overflow:"hidden",
                 
             }}>
+
+
+
+
+<Box sx={{
+    width:"100%",
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+}}>
+
                 <Box sx={{
 
                     width: {
@@ -209,6 +223,19 @@ const Services2 = () => {
 
 
                 </Box>
+                </Box>
+
+
+
+
+
+
+
+
+
+
+
+
                 <Box sx={{
                     // width: {
                     //     xs: '95%',
@@ -237,7 +264,7 @@ const Services2 = () => {
 
                         <Stack direction="row" spacing={0} justifyContent="center" mb={3}
                         sx={{
-                            border: "1px solid red",
+                            // border: "1px solid red",
                             width: "100%",
                             // border:"3px solid red"
                         }}>
