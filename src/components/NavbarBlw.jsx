@@ -1,16 +1,16 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, createContext, useContext, useEffect } from "react";
 import { AppBar, Box, Toolbar, Typography } from '@mui/material';
 import { IconButton } from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { useMediaQuery as UMQ} from "@mui/material";
 import { FaSearch } from "react-icons/fa";
-import { borderBottom, keyframes } from "@mui/system";
+import { borderBottom, keyframes, maxWidth } from "@mui/system";
 import { Link } from "react-router-dom";
+// import PublicLayout from "../routes/PublicLayout";
+import { NavContext } from "../context/NavContext";
 
-
-
-
-
+import {useTheme} from "@mui/system";
+import {useMediaQuery} from "@mui/system";
 
 
 const navItems = [
@@ -152,12 +152,20 @@ const slideWithDoubleBump = keyframes`
 
 const NavbarBlw =()=>{
 
+    // const NavContext = createContext();
+
     const isMobile = UMQ("(max-width:600px)");
     const isMobile2 = window.matchMedia("(max-width:825px)").matches;
     const isMobile3 = UMQ("(max-width:810px)");
     const [openKar,setOpenKar]=useState(-1);
-    const [openFlag, setOpenFlag] = useState(false);
+    // const [openFlag, setOpenFlag] = useState(false);
     const [openFlag2, setOpenFlag2] = useState(false);
+    const { openFlag, setOpenFlag } = useContext(NavContext);
+    const theme=useTheme();
+    const isDev= useMediaQuery(theme.breakpoints.down("md"));
+    const isDevE = useMediaQuery('(max-width:522.5px)');
+
+    
     // const [s1, setS1] = useState(-1);
     // const [s2, setS2] = useState(false);
     // const [s3,setS3]=useState(false);
@@ -165,7 +173,10 @@ const NavbarBlw =()=>{
     // const [s5, setS5] = useState(false);
     // const [s6, setS6] = useState(false);
 
-
+    // useEffect(()=>{
+    //     console.log(openFlag);
+    // },[])
+    
 
     const [openStates, setOpenStates] = useState({});
     const handleToggle = (index) => {
@@ -258,11 +269,21 @@ const NavbarBlw =()=>{
 
 
     return(<>
+        
         <AppBar disableGutters sx={{
             // top:100,
-            position: 'unset', 
-            top: 95, zIndex: 10900,
+            // position: 'unset', 
             // position: "fixed",
+            // position: openFlag ? "unset" : "",
+            // position: openFlag ? "absolute" : "unset",
+            position: openFlag ? "unset" : "absolute",
+            width: "100%",
+
+            // top: 200,
+            // top: isDevE ?190 : { xs: 200, sm: 150, md:97 },
+            top: isDevE ? { xs: 200, sm: 150, md: 97 } : { xs: 183, sm: 149, md: 97 },
+
+             zIndex: 10900,
             bgcolor:"#062d4c",
             display: "flex",
             // width: "100%",
@@ -822,6 +843,7 @@ const NavbarBlw =()=>{
             </Box>
         </Toolbar>
     </AppBar>
+       
     </>);
 };
 export default NavbarBlw;

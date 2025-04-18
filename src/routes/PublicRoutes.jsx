@@ -26,7 +26,10 @@ import ShopPD from '../pages/Shop/ShopPD';
 import ShopCP from '../pages/Shop/ShopCP';
 import ShopCHKP from '../pages/Shop/ShopCHKP';
 import Solutions from '../pages/Solutions/Solutions';
+import { NavProvider } from "../context/NavContext";
+ import NavbarBlw from '../components/NavbarBlw';
  
+
 
 const PublicRoutes = () => {
 
@@ -34,9 +37,16 @@ const PublicRoutes = () => {
 
   return (
     <>
+        
+      <NavProvider>
       <Routes>
+
+
         <Route path='/' element={<PublicLayout/>}>
           <Route index element={< Home/>}/>
+    {/* <Route index element={<NavbarBlw />} /> */}
+
+
 
           <Route path='/about' element={<About />} />
           <Route path='/hometwo' element={<Home2 />} />
@@ -110,8 +120,9 @@ const PublicRoutes = () => {
 
                 
         </Route>
-
+      
       </Routes>  
+      </NavProvider>
     </>
   )
 }

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+
 import { AppBar, Toolbar, Box, Typography } from '@mui/material';
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import { NavContext } from "../context/NavContext";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-
+  
 
 
 
@@ -43,14 +44,23 @@ const socialMediaIcons = [
 
 const Navbar=()=>{
 
-
+    const { openFlag, setOpenFlag } = useContext(NavContext);
+    //   useEffect(()=>{
+    //     console.log(openFlag);
+        
+    //   }
+    //     , [openFlag]
+    //   )
     return(<>
     <AppBar sx={{
         // position:"sticky",
             // position: "fixed",
-            // position: 'fixed',
-            position: 'unset', 
-            top: 0,
+            // position: 'absolute',
+            // position: 'unset', 
+            position: openFlag ? "unset" : "absolute",
+            // top: 95,
+            width: "100%",
+            top:0,
             zIndex: 1100, 
             // width: '100%' ,
             bgcolor:"#fff",

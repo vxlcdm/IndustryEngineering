@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useState, createContext, useContext } from "react";
 import Navbar from '../components/Navbar'
 import NavbarBlw from '../components/NavbarBlw'
 import Footer from '../components/Footer'
@@ -8,10 +9,9 @@ import NavbarBlw2 from '../components/NavbarBlw2'
 import Navbar2 from '../components/Navbar2'
 // import useMediaQuery from '@mui/material/useMediaQuery';
 // import { useTheme } from '@mui/material/styles';
-
-
+import { NavContext } from '../context/NavContext';
+// import { NavProvider } from '../context/NavContext';
  
-
 
 const PublicLayout = () => {
   // const theme = useTheme();
@@ -19,7 +19,16 @@ const PublicLayout = () => {
   // const isMd = useMediaQuery(theme.breakpoints.down('md'));
   // const isSm = useMediaQuery(theme.breakpoints.down('sm'));
   // const isXs = useMediaQuery(theme.breakpoints.down('xs'));
+ 
+  const { openFlag, setOpenFlag } = useContext(NavContext);
 
+  // useEffect(()=>{
+  //   console.log(openFlag);
+    
+  // }
+  //   , [openFlag]
+  // )
+  
   // const is675 = useMediaQuery('(min-width:675px)');
   // const is355 = useMediaQuery('(min-width:355px)');
 
@@ -32,45 +41,59 @@ const PublicLayout = () => {
   if (pathname.startsWith('/')) {
     navbarToRender = (
       <>
+
+       
+         
       <Box sx={{
-        // border:"10px solid red",
+        // m:2,
+        // border:"3px solid green",
         // display:"flex",
-          width: "100%",
+          // width: "100%",
+          left:0,
           zIndex:9999,
-        position:"fixed",
+          position: openFlag ? "fixed" : "sticky",
+          // position: openFlag ? "absolute" : "sticky",
+
         // overflowY: "auto",
         
         
         // maxHeight: 'max-content',
-        // height:"100%",
+        // maxHeight:"100%",
         // height:"20%",
+        height:openFlag?"100%":"0%",
           // maxHeight: '700px',
-          // overflowY: isSm ? "scroll" : "unset",
+          overflowY: openFlag ? "auto" : "unset",
+          // overflowY: "auto",
+          top:openFlag?"0":0,
+
 
 
       }}>
 
           <Navbar />
-<Box  sx={{
-
-}}>
+ 
+            {/* <NavProvider> */}
 
             <NavbarBlw />
 
-</Box>
+        {/* </NavProvider> */}
+ 
       </Box>
+
+        
+
       </>
     );
   } else if (pathname.startsWith('/hometwo')) {
      navbarToRender = (
       <>
          <Box sx={{
-           // border:"10px solid red",
+          //  border:"10px solid red",
            // display:"flex",
            width: "100%",
            zIndex: 9999,
 
-           position: "fixed",
+          //  position: "fixed",
          }}>
         <Navbar2 />
         <NavbarBlw2 />
@@ -108,18 +131,19 @@ const PublicLayout = () => {
 
 
       <Box component="main" sx={{ flex: 1,
-          pt: { xs:"305px",sm: "250px", md: '160px',lg:'160px' }
+          pt: { xs:"305px",sm: "250px", md: '160px',lg:'160px' },
+          // border:"3px solid green",
        }}>
         <Outlet />
       </Box>
      
 
 
-    <Footer />
+    {/* <Footer /> */}
     
       </Box>
     </>
   )
 }
 
-export default PublicLayout
+export default PublicLayout;
