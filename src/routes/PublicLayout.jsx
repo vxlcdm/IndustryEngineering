@@ -42,7 +42,7 @@ const PublicLayout = () => {
         
         
         // maxHeight: 'max-content',
-        height:"100%",
+        // height:"100%",
         // height:"20%",
           // maxHeight: '700px',
           // overflowY: isSm ? "scroll" : "unset",

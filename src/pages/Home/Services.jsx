@@ -77,14 +77,17 @@ const Services = () => {
     justifyContent:"center",
     flexDirection:"column",
     alignItems:"center",
+              backgroundImage: 'url(https://lazeapostolski.com/industrial2/img/bg.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
 }}>
 
 
 
 <Box sx={{
-          backgroundImage: 'url(https://lazeapostolski.com/industrial2/img/bg.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+        //   backgroundImage: 'url(https://lazeapostolski.com/industrial2/img/bg.jpg)',
+        //   backgroundSize: 'cover',
+        //   backgroundPosition: 'center',
 }}>
       <Box sx={{
           width: {
