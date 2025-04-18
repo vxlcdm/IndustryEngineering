@@ -36,72 +36,78 @@ const WWD = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                // flexDirection: "column",
+
+                
             }}>
 
 
-
+              
 
 
 
         <Box sx={{
             my:10,
                 // border: "1px solid red",
-                // display: "flex",
+                display: "flex",
                 // justifyContent: { xs: "center", md: "flex-start" },
                        justifySelf: "center",
-                    display: "flex",
+                    // display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                // alignSelf: "center",
-                // border: "1px solid red",
-                // maxWidth: '1200px',
+                    flexDirection:"column",
+                    // alignSelf: "center",
+                    // border: "1px solid red",
+                    // maxWidth: '1200px',
         }}>
-                 <Box sx={{
-                
-                                mb: 1,
-                                width: {
-                                    xs: '95%',
-                                    sm: "600px",
-                                    md: '900px',
-                                    lg: '1200px',
-                
+                    <Box sx={{
+                        // my: 10,
+
+                        mb: 1,
+                        width: {
+                            xs: '95%',
+                            sm: "600px",
+                            md: '900px',
+                            lg: '1200px',
+
+                        },
+                        display: "flex",
+
+                        justifySelf: "center",
+                        alignSelf: "center",
+
+                        // border:"1px solid black",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        // bgcolor: "#f7f7f7",
+                        // mx: ,
+
+                    }}>
+                        <Typography
+                            variant="h5"
+                            fontWeight="800"
+                            gutterBottom
+                            sx={{
+                                // color:"white",
+                                display: "inline-block",
+                                position: "relative",
+                                // textAlign: "center",
+                                "&::after": {
+                                    content: '""',
+                                    position: "absolute",
+                                    left: 0,
+                                    bottom: -8,
+
+                                    height: "3.5px",
+                                    width: "40px",
+                                    backgroundColor: "#fbae19",
                                 },
-                                display: "flex",
-                                
-                                justifySelf: "center",
-                                alignSelf: "center",
+                            }}
+                        >
+                            What We do
+                        </Typography>
+                    </Box>
                 
-                                // border:"1px solid black",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                // bgcolor: "#f7f7f7",
-                                // mx: ,
-                
-                            }}>
-                                <Typography
-                                    variant="h5"
-                                    fontWeight="800"
-                                    gutterBottom
-                                    sx={{
-                                        // color:"white",
-                                        display: "inline-block",
-                                        position: "relative",
-                                        // textAlign: "center",
-                                        "&::after": {
-                                            content: '""',
-                                            position: "absolute",
-                                            left: 0,
-                                            bottom: -8,
-                
-                                            height: "3.5px",
-                                            width: "40px",
-                                            backgroundColor: "#fbae19",
-                                        },
-                                    }}
-                                >
-                        What We do
-                                </Typography>
-                            </Box>
 
 
                 <Box sx={{

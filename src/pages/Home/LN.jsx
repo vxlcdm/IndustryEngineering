@@ -78,6 +78,7 @@ const LN = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    flexDirection:"column",
                 my:10
          }}>
                 <Box sx={{

@@ -96,7 +96,7 @@ const Partner = () => {
 
         <Box sx={{
             width: {
-                xs: '95%',
+                xs: '80%',
                 sm: "600px",
                 md: '900px',
                 lg: '1200px',
@@ -107,24 +107,43 @@ const Partner = () => {
             display: "flex",
             justifyContent: "start",
             alignItems: "center",
+            position: "relative",
+
             //   border:"1px solid red",
 
 
         }}>
+          <Box sx={{
+              position: "relative",
+
+          }}>
+
+              <Typography variant="h4"
+                fontWeight="700"
+                color="initial" sx={{
+                  // px: 5,
+
+                }}>
+
+                Our partners
+              </Typography>
+          </Box>
+
             <Typography
                 variant="h4"
                 fontWeight="700"
                 gutterBottom
                 sx={{
+                  // px: 5,
 
                     display: "inline-block",
-                    position: "relative",
+                    // position: "relative",
                     // textAlign: "center",
                     "&::after": {
                         content: '""',
                         position: "absolute",
                         left: 0,
-                        bottom: -8,
+                        bottom: 0,
 
                         height: "3.5px",
                         width: "40px",
@@ -132,9 +151,12 @@ const Partner = () => {
                     },
                 }}
             >
-                Our partners
+                
             </Typography>
         </Box>
+
+
+
         <Box sx={{
             // border: "1px solid red",
             // px:2,
@@ -144,7 +166,7 @@ const Partner = () => {
             justifyContent: "center",
             alignItems: "center",
             width: {
-                xs: '95%',
+                xs: '90%',
                 sm: "600px",
                 md: '900px',
                 lg: '1200px',
